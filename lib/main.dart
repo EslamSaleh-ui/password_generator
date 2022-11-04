@@ -1,8 +1,5 @@
 import 'dart:io';
-
-import 'package:flutter/material.dart';
-import 'package:page_animation_transition/animations/bottom_to_top_transition.dart';
-import 'package:page_animation_transition/page_animation_transition.dart';
+import 'package:untitled1/components/button.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:untitled1/providers/methods.dart';
 import 'package:share_plus/share_plus.dart';
@@ -66,24 +63,9 @@ class MyApp extends StatelessWidget  {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-          NeumorphicButton(style:NeumorphicStyle( shape: NeumorphicShape.concave,
-              boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
-              depth: 8,surfaceIntensity: 1,
-              lightSource: LightSource.topLeft,
-              color: Colors.blue.shade900) ,
-          child: Text('Generate Password',style: TextStyle(color: Colors.white)),
-            onPressed:(){Navigator.push(context,PageAnimationTransition(page: generate(),
-                pageAnimationType:BottomToTopTransition() ));} ,
-          ),Divider(color:Colors.transparent),
-              NeumorphicButton(style:NeumorphicStyle( shape: NeumorphicShape.concave,
-                  boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
-                  depth: 8,surfaceIntensity: 1,
-                  lightSource: LightSource.topLeft,
-                  color: Colors.blue.shade900) ,
-                child: Text('Check Password Strength',style: TextStyle(color: Colors.white)),
-                onPressed:(){Navigator.of(context).push(PageAnimationTransition(page: check(),
-                    pageAnimationType:BottomToTopTransition() ));} ,
-              )
+              button(title: 'Generate Password',page: generate())
+       ,Divider(color:Colors.transparent),
+           button(title: 'Check Password Strength', page: check())
             ],
           ),
         ),
