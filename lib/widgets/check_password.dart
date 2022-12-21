@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import 'package:flutter/material.dart';
-=======
->>>>>>> e547e8e (welcome pg)
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:untitled1/providers/providers.dart';
 import 'package:provider/provider.dart';
