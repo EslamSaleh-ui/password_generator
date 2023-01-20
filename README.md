@@ -1,6 +1,8 @@
 # untitled1
 
-A new Flutter project.
+A new Flutter project 
+
+- provider state management 
 
 ## Getting Started
 
