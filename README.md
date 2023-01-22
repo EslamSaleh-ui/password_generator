@@ -2,7 +2,11 @@
 
 A new Flutter project 
 
-- provider state management 
+- provider state management
+
+- clean code
+
+- unit test 
 
 ## Getting Started
 
